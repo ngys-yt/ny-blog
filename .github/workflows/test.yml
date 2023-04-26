@@ -1,0 +1,16 @@
+on:
+  push:
+    branches:
+    - main
+    
+    # 具体的な実行内容を定義
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: Lint Check
+        run: yarn run lint
+        
+      - name: Type Check
+        run: yarn run tsc
