@@ -1,22 +1,18 @@
+name: Yarn CI
+
 on:
   push:
-    branches:
-      - main
-
-      - main
-      - 'releases/**'
-
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+    
     # 具体的な実行内容を定義
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Lint Check
-      - run-name: Lint Check
         run: yarn run lint
-
       - name: Type Check
-
-      - run-name: Type Check
         run: yarn run tsc
 # CItest
