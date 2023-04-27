@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 import { Color } from '@/theme/colors';
 import { FontSize } from '@/theme/fontSizes';
 import { FontWeight } from '@/theme/fontWeights';
 import { LineHeight } from '@/theme/lineHeights';
+
 import { getStyle } from './styles';
-import Link from 'next/link';
 
 type Props = {
   children: React.ReactNode;

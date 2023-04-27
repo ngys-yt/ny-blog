@@ -2,6 +2,7 @@ import { Color } from '@/theme/colors';
 import { FontSize } from '@/theme/fontSizes';
 import { FontWeight } from '@/theme/fontWeights';
 import { LineHeight } from '@/theme/lineHeights';
+
 import { getStyle } from './styles';
 
 type Props = {
