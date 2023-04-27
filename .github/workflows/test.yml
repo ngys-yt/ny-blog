@@ -1,5 +1,6 @@
 name: Yarn CI
 
+# 実行トリガーの設定
 on:
   push:
     branches: [main]
@@ -8,11 +9,16 @@ on:
 
     # 具体的な実行内容を定義
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     steps:
-      - name: Lint Check
-        run: yarn run lint
-      - name: Type Check
-        run: yarn run tsc
-# CItest
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Lint check
+        run: yarn lint
+
+      - name: tsc check
+        run: yarn tsc
