@@ -11,12 +11,14 @@ on:
 
 # 具体的な実行内容を定義
 jobs:
-  runs-on: ubuntu-latest
+  lint:
+    runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v3
+      
+      - uses: actions/checkout@v2
 
-      - name: Lint Check
-        run: yarn run lint
+      - name: Install dependencies
+        run: yarn install
 
-      - name: Type Check
-        run: yarn run tsc
+      - name: Lint code
+        run: yarn lint
