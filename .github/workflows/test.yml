@@ -11,8 +11,7 @@ on:
 
 # 具体的な実行内容を定義
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
     steps:
         uses: actions/checkout@v3
