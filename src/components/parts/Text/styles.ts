@@ -1,8 +1,9 @@
 import { css } from '@emotion/react';
-import lineHeights, { LineHeight } from '@/theme/lineHeights';
+
 import colors, { Color } from '@/theme/colors';
 import fontSizes, { FontSize } from '@/theme/fontSizes';
 import { FontWeight } from '@/theme/fontWeights';
+import lineHeights, { LineHeight } from '@/theme/lineHeights';
 
 type Args = {
   lineHeight: LineHeight;
