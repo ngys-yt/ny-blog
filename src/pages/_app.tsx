@@ -1,8 +1,8 @@
-import { Global, css } from '@emotion/react';
 import '@/styles/global.css';
+import { Global, css } from '@emotion/react';
+import emotionReset from 'emotion-reset';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import emotionReset from 'emotion-reset';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=5"
         />
-        <title key="title"></title>
+        <title key="title" />
         <meta property="og:locale" content="ja_JP" />
         <meta property="og:type" content="website" />
       </Head>
